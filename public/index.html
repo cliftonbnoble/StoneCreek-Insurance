@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>StoneCreek Flood Rater</title>
+        <link href="https://fonts.googleapis.com/css?family=Acme|Bangers|Luckiest+Guy|Permanent+Marker|Press+Start+2P|Prosto+One|Special+Elite" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="assets/css/reset.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery.js"></script>
+    </head>
+    <body>
+    <div class="containter">
+        <br>
+        <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-8 mx-auto">
+            </div>
+        </div>
+    <div class="row">
+<div class="col-lg-8 col-md-8 col-sm-8 mx-auto">   
+    <div class="jumbotron">
+    <div class="mx-auto text-center title-banner">Flood Rater</div>
+    <div class="gif-area">
+        <!-- Flood Form -->
+    <div class="text-center instructions">
+            Fill in your rate request with as much info as possible.  
+    
+    </div>
+        <form>
+            <div class="row">
+                
+                <span class="col-lg-4 col-md-4 col-sm-4 mx-auto"><label for="inputyearbuilt">Year Built</label><input class="form-control" type="text" placeholder="Year Built" id="year-built" required></span>
+                <span class="col-lg-8 col-md-8 col-sm-8 mx-auto"><label for="inputaddress">Address</label><input class="form-control" type="text" placeholder="Address" id="address" required></span>
+            </div>
+            <hr>
+            <div class="row">
+                    <span class="col-lg-4 col-md-4 col-sm-4 mx-auto"><label for="inputcity">City</label><input class="form-control" type="text" placeholder="City" id="city" required></span>
+                    <span class="col-lg-4 col-md-4 col-sm-4 mx-auto"><label for="inputstate">State</label><input class="form-control" type="text" placeholder="State" id="state" required></span>
+                    <span class="col-lg-4 col-md-4 col-sm-4 mx-auto"><label for="inputzip">Zip</label><input class="form-control" type="text" placeholder="Zip" id="zip" required></span>
+                </div>
+        </form>
+    <div class="text-center instructions">
+            Construction Information  
+            <hr>
+    </div>
+        <form>
+            <div class="row">
+                <span class="col-lg-4 col-md-4 col-sm-4 mx-auto"><label for="construction-type">Construction Type</label>
+                    <select class="form-control" id="construction-type" required>
+                      <option>Wood Frame</option>
+                      <option>Wood Frame with Masonry Veneer</option>
+                      <option>Reinforced Masonry</option>
+                    </select></span>
+                    <span class="col-lg-4 col-md-4 col-sm-4 mx-auto"><label for="contents-cost-value">Contents Cost Value</label>
+                    <select class="form-control" id="contents-cost-value" required>
+                        <option>ACV</option>
+                        <option>RCV</option>
+                    </select></span>
+                <span class="col-lg-4 col-md-4 col-sm-4 mx-auto"><label for="inputcoveragea">Coverage A</label><input class="form-control" type="text" placeholder="Building Property Limit" id="coverage-a" required></span>
+                
+            </div>
+            <hr>
+            <div class="row">
+                <span class="col-lg-4 col-md-4 col-sm-4 mx-auto"><label for="inputcoverageb">Coverage B</label><input class="form-control" type="text" placeholder="Personal Property Limit" id="coverage-b" required></span>
+                <span class="col-lg-4 col-md-4 col-sm-4 mx-auto"><label for="inputcoveragee">Coverage E</label><input class="form-control" type="text" placeholder="Loss of Use Limit" id="coverage-e" required></span>
+                <span class="col-lg-3 col-md-3 col-sm-3 mx-auto"><label for="inputdwelling">Replacement Value</label><input class="form-control" type="text" placeholder="Dwelling Replacement Value" id="dwelling-replacement-value" required></span>  
+                <!-- <span class="col-lg-4 col-md-4 col-sm-4 mx-auto"><label for="inputcontents">Contents Cost Value</label><input class="form-control" type="text" placeholder="Contents Cost Value" id="contents-cost-value" required></span> -->
+                
+            </div>
+            <hr>
+            <div class="row">
+                <!-- <span class="col-lg-3 col-md-3 col-sm-3 mx-auto"><label for="inputdwelling">Replacement Value</label><input class="form-control" type="text" placeholder="Dwelling Replacement Value" id="replacement-value" required></span>   -->
+                <span class="col-lg-4 col-md-4 col-sm-4 mx-auto"><label for="foundation-type">Foundation Type</label>
+                    <select class="form-control" id="foundation-type" required>
+                        <option>Basement</option>
+                        <option>No Basement</option>
+                    </select></span>
+                <!-- <span class="col-lg-3 col-md-3 col-sm-3 mx-auto"><label for="inputfoundation">Foundation Type</label><input class="form-control" type="text" placeholder="Foundation Type" id="foundation-type" required></span>       -->
+                <span class="col-lg-3 col-md-3 col-sm-3 mx-auto"><label for="number-of-levels">Number of Levels</label>
+                    <select class="form-control" id="number-of-levels" required>
+                        <option>1</option>
+                        <option>2</option>
+                    </select></span>
+                    <span class="col-lg-4 col-md-4 col-sm-4 mx-auto"><label for="policy-type">Policy Type</label>
+                        <select class="form-control" id="policy-type" required>
+                            <option>Primary</option>
+                            <option>Excess</option>
+                        </select></span>
+                    <!-- <span class="col-lg-3 col-md-3 col-sm-3 mx-auto"><label for="inputpolicy">Policy Type</label><input class="form-control" type="text" placeholder="Policy Type" id="policy-type" required></span> -->
+            </div>
+        </form>
+        <hr>
+        <div class="row">
+                <button type="submit" class="btn btn-primary mx-auto" id="form-submit">Submit</button>
+            </div>            
+    </div>  
+    </div>
+</div>
+        </div>
+        </div>
+        
+        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+        <script src="../data/formData.js" async defer></script>
+        <!-- <script src="assets/javascript/app.js" async defer></script> -->
+        <!-- <script src="assets/javascript/apiCall.js" async defer></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+body {
+    background: url(../../assets/images/web-background.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+p {
+    font-family: 'Luckiest Guy', cursive;
+    /* font-family: 'Permanent Marker', cursive; */
+    font-size: 36px;
+}
+.searchBtn {
+    font-family: 'Acme', sans-serif;
+    font-size:  18px;
+}
+.instructions {
+    font-family: 'Prosto One', cursive;
+    /* font-family: 'Press Start 2P', cursive; */
+    /* font-family: 'Bangers', cursive; */
+    font-size: 24px;
+}
+.title-banner {
+    font-family: 'Luckiest Guy', cursive;
+    /* font-family: 'Permanent Marker', cursive; */
+    font-size: 48px;
+}
+.imdb {
+    font-family: 'Special Elite', cursive;
+    font-size: 30px;
+}
